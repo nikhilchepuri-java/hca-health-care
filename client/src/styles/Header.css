@@ -1,0 +1,17 @@
+.header {
+    background-color: #011742;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: white;
+    text-align: center;
+  }
+  
+.nav-menu{
+  display: flex;
+  justify-content: space-between;
+}
+.nav-item{
+  margin: 0 10px;
+}

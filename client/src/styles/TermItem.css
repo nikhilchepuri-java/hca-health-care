@@ -1,0 +1,9 @@
+.term-item a {
+    color: #61dafb;
+    text-decoration: none;
+  }
+  
+  .term-item a:hover {
+    text-decoration: underline;
+  }
+  

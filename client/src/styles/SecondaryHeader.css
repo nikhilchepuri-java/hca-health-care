@@ -1,0 +1,26 @@
+.secondary-header-wrapper{
+    display: flex;
+    flex-direction: column;
+
+}
+.secondary-header
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 50px;
+    padding: 0 10px;
+    align-items: center;
+    color: #000;
+    background-color: #fff;
+}
+
+.find-care {
+    background-color: #28728f;
+    height: 120px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    color: #fff;
+}

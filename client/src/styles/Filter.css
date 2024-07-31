@@ -1,0 +1,40 @@
+.filter {
+    text-align: center;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    padding: 10px 0;
+    background-color: #fff;
+  }
+  
+.filter-title{
+  font-size: "28px";
+  margin: 0 0 10 0;
+  font-size: large;
+  background-color: #fff;
+
+}
+.filter-items{
+  margin: 10px 0;
+  background-color: #fff;
+
+}
+
+  .filter-button {
+    margin: 0 5px;
+    padding: 10px;
+    color: #D3D3D3	;
+    background-color: #fff;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .filter-button.active,
+  .filter-button:hover {
+    /* background-color: #4779c4; */
+    color: #4779c4;
+    font-weight: 800;
+  }

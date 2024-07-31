@@ -1,0 +1,15 @@
+.app {
+  text-align: center;
+  background-color: #dadada;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+@media (max-width: 600px) {
+  .filter-button {
+    padding: 5px;
+    font-size: 12px;
+  }
+}
