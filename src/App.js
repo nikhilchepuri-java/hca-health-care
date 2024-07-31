@@ -5,24 +5,19 @@ import TermList from "./components/TermList";
 import Filter from "./components/Filter";
 import "./App.css";
 import Footer from "./components/Footer";
-
+import data from "./data.json";
 const App = () => {
   const [terms, setTerms] = useState([]);
-  const [data, setData] = useState([]);
+  const [responsedata, setResponseData] = useState([]);
   const [selectedLetter, setSelectedLetter] = useState(["A"]);
 
   useEffect(() => {
-    fetch("/data.json")
-      .then((response) => response.json())
-      .then((data) => {
-        setTerms(
-          data?.termList?.filter(
-            (item) => item?.title[0]?.toUpperCase() === "A"
-          )
-        );
-        setData(data?.termList);
-      });
+    setTerms(
+      data?.termList?.filter((item) => item?.title[0]?.toUpperCase() === "A")
+    );
+    setResponseData(data?.termList);
   }, []);
+  console.log("******* checking data", terms, selectedLetter);
 
   return (
     <div className="app">
@@ -33,7 +28,7 @@ const App = () => {
           selectedLetter={selectedLetter}
           onLetterSelect={setSelectedLetter}
           terms={terms}
-          data={data}
+          data={responsedata}
           setTerms={setTerms}
         />
         <TermList terms={terms} />
