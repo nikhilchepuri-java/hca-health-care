@@ -16,8 +16,6 @@ const App = () => {
       .then((data) => setTerms(data));
   }, []);
 
-  const filteredTerms = [];
-
   return (
     <div className="app">
       <div className="primary-section">
@@ -27,7 +25,7 @@ const App = () => {
           selectedLetter={selectedLetter}
           onLetterSelect={setSelectedLetter}
         />
-        <TermList terms={filteredTerms} />
+        <TermList terms={terms?.termList} />
       </div>
       <Footer />
     </div>

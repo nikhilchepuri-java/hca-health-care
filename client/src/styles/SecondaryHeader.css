@@ -9,18 +9,48 @@
     flex-direction: row;
     justify-content: space-between;
     height: 50px;
-    padding: 0 10px;
+    padding: 10px 40px;
     align-items: center;
-    color: #000;
+    color: #4779c4;
     background-color: #fff;
 }
 
 .find-care {
-    background-color: #28728f;
+    background-color: #2c456b;
     height: 120px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
     color: #fff;
+    padding: 10px 0;
+}
+.find-care-title-section h1{
+    font-weight: 500;
+    margin: 0;
+}
+.find-care-search{
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px 0;
+    color: #808080;
+}
+.secondary-header-actions{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.appointment{
+    background: #1b2d48;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+}
+.alerts{
+    background: #ffbaba;
+    border: 1px solid #ff5252;
+    color: #000;
+    padding: 10px;
+    border-radius: 5px;
 }

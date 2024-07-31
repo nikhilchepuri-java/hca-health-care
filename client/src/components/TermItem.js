@@ -1,11 +1,13 @@
 import React from "react";
 import "../styles/TermItem.css";
 
-const TermItem = ({ term }) => {
+const TermItem = ({ terms }) => {
   return (
-    <li className="term-item">
-      <a href="#">{term}</a>
-    </li>
+    <div className="term-items">
+      {terms?.map((item) => {
+        return <div className="term-list-item">{item}</div>;
+      })}
+    </div>
   );
 };
 

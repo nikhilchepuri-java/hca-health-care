@@ -1,3 +1,11 @@
+.term-items{
+  display: grid; 
+  grid-template-columns: repeat(2, 1fr); 
+  gap: 10px; 
+  width: 100%;
+  align-items: start;
+  justify-content: start;
+}
 .term-item a {
     color: #61dafb;
     text-decoration: none;
@@ -6,4 +14,8 @@
   .term-item a:hover {
     text-decoration: underline;
   }
+.term-list-item{
+  display: inline-flex;
+  color: #83aff0;
+}
   

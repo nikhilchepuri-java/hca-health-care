@@ -6,7 +6,7 @@ const Filter = ({ selectedLetter, onLetterSelect }) => {
 
   return (
     <div className="filter">
-      <div className="filter-title">Treatments, Services and Specialties</div>
+      <h3 className="filter-title">Treatments, Services and Specialties</h3>
       <div className="filter-items">
         {letters.map((letter) => (
           <button

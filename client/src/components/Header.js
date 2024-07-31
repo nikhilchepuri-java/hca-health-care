@@ -10,15 +10,22 @@ const Header = () => {
   ];
   return (
     <div className="header">
-      <div>HCA Houston Healthcare</div>
-      <div className="nav-menu">
-        {(NavItems || [])?.map((navItem, index) => {
-          return (
-            <a className={`nav-item`} key={index}>
-              {navItem}
-            </a>
-          );
-        })}
+      <h2 className="title">
+        HCA <span>Houston Healthcare</span>
+      </h2>
+
+      <div className="nav-menu-wrapper">
+        <div className="nav-menu">
+          {(NavItems || [])?.map((navItem, index) => {
+            return (
+              <a className={`nav-item`} key={index}>
+                {navItem}
+              </a>
+            );
+          })}
+        </div>
+
+        <div className="search">Search</div>
       </div>
     </div>
   );

@@ -10,12 +10,12 @@
   }
   
 .filter-title{
-  font-size: "28px";
-  margin: 0 0 10 0;
-  font-size: large;
+  margin: 0;
+  font-weight: 500;
   background-color: #fff;
 
 }
+
 .filter-items{
   margin: 10px 0;
   background-color: #fff;
