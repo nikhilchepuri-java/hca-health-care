@@ -17,7 +17,6 @@ const App = () => {
     );
     setResponseData(data?.termList);
   }, []);
-  console.log("******* checking data", terms, selectedLetter);
 
   return (
     <div className="app">

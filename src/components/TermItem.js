@@ -6,9 +6,9 @@ const TermItem = ({ terms, key }) => {
     <div className="term-items" key={key}>
       {terms?.map((item, index) => {
         return (
-          <div className="term-list-item" key={index}>
+          <a className="term-list-item" key={index} href="#">
             {item}
-          </div>
+          </a>
         );
       })}
     </div>
