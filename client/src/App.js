@@ -8,12 +8,20 @@ import Footer from "./components/Footer";
 
 const App = () => {
   const [terms, setTerms] = useState([]);
-  const [selectedLetter, setSelectedLetter] = useState("");
+  const [data, setData] = useState([]);
+  const [selectedLetter, setSelectedLetter] = useState(["A"]);
 
   useEffect(() => {
     fetch("/data.json")
       .then((response) => response.json())
-      .then((data) => setTerms(data));
+      .then((data) => {
+        setTerms(
+          data?.termList?.filter(
+            (item) => item?.title[0]?.toUpperCase() === "A"
+          )
+        );
+        setData(data?.termList);
+      });
   }, []);
 
   return (
@@ -24,8 +32,11 @@ const App = () => {
         <Filter
           selectedLetter={selectedLetter}
           onLetterSelect={setSelectedLetter}
+          terms={terms}
+          data={data}
+          setTerms={setTerms}
         />
-        <TermList terms={terms?.termList} />
+        <TermList terms={terms} />
       </div>
       <Footer />
     </div>

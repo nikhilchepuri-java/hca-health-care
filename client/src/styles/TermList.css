@@ -1,18 +1,21 @@
 .term-list-wrapper{
   background-color: #fff;
   display: flex;
-  margin: 1em 4em;
+  margin: 2em 10em;
   flex-direction: column;
   align-items: start;
-  padding: 0 20px;
+  padding: 0 1rem;
   border-radius: 5px;
 }
 
+.term-list h2{
+  margin: 10px 0;
+}
 .term-list {
     width: 100%;
-    
     list-style-type: none;
-    padding: 0;
+    padding: 0 10px;
+    margin: 20px;
   }
   
   .term-item {

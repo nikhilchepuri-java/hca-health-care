@@ -1,4 +1,19 @@
 .footer{
     background-color: #fff;
     height: 150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+}
+.footer .footer-about{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.footer .footer-about a{
+   text-decoration: underline;
+   cursor: pointer;
 }
