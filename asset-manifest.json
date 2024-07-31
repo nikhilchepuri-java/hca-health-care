@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/hca-health-care/static/css/main.c3d0e368.css",
+    "main.js": "/hca-health-care/static/js/main.2067773a.js",
+    "index.html": "/hca-health-care/index.html",
+    "main.c3d0e368.css.map": "/hca-health-care/static/css/main.c3d0e368.css.map",
+    "main.2067773a.js.map": "/hca-health-care/static/js/main.2067773a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c3d0e368.css",
+    "static/js/main.2067773a.js"
+  ]
+}
