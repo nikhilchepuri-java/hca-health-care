@@ -5,17 +5,22 @@ import TermList from "./components/TermList";
 import Filter from "./components/Filter";
 import "./App.css";
 import Footer from "./components/Footer";
-import data from "./data.json";
 const App = () => {
   const [terms, setTerms] = useState([]);
   const [responsedata, setResponseData] = useState([]);
   const [selectedLetter, setSelectedLetter] = useState(["A"]);
 
   useEffect(() => {
-    setTerms(
-      data?.termList?.filter((item) => item?.title[0]?.toUpperCase() === "A")
-    );
-    setResponseData(data?.termList);
+    fetch("/hca-health-care/data.json")
+      .then((response) => response.json())
+      .then((data) => {
+        setTerms(
+          data?.termList?.filter(
+            (item) => item?.title[0]?.toUpperCase() === "A"
+          )
+        );
+        setResponseData(data?.termList);
+      });
   }, []);
 
   return (
