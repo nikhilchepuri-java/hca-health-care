@@ -6,7 +6,7 @@ const SecondaryHeader = () => {
   return (
     <div className="secondary-header-wrapper">
       <div className="secondary-header">
-        <div>View All ER Wait Times</div>
+        <div className="er-time">View All ER Wait Times</div>
         <div className="secondary-header-actions">
           <div className="appointment">Make an Appointment</div>
           <div className="alerts">Alerts</div>

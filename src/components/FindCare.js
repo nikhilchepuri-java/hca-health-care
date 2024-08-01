@@ -6,7 +6,11 @@ const FindCare = () => {
     <div className="find-care">
       <div className="find-care-title-section">
         <h1>Find Care</h1>
-        <div className="find-care-search">What are you looking for?</div>
+        <input
+          type="text"
+          className="find-care-search"
+          placeholder="What are you looking for?"
+        />
       </div>
       <div>Need help?We're here.</div>
     </div>
